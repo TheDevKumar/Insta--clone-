@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html, body{
+    background-color: #1c1e21;
+    font-family: "Roboto", sans-serif;
+}
+
+
+.main-hold{
+    height: 100%;
+    width: 100%;
+    background-color: #1c1e21;
+    display: grid;
+    grid-template-columns: 60% 15%; 
+}
+
+
+
+.text-img-holder{
+    height: 100vh;
+    width: 500px;
+    background-color: #1c1e21;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
+.img-holder{
+    display: flex;
+    height: 500px;
+    width: 500px;
+    
+
+   
+}
+
+.text-img-holder{
+    margin-left: 400px;
+    justify-content: center;
+    align-items: center;
+
+}
+.text-holder{
+    margin-left: 60px;
+}
+
+
+img{
+
+    height: 500px;
+    width: 500px;
+}
+
+
+h1{
+    height: 100px;
+    width: 770px;
+    font-size: 50px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    
+    
+}
+
+.sigin-form-holder{
+    height: 100vh;
+    width: 36vw;
+    background-color: #1E1E1E;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    margin-left: 70px;
+    border-left: 2px solid rgb(66, 66, 66);
+   
+}
+
+form{
+    height: 60vh;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    
+}
+
+form input{
+    height: 60px;
+    margin-bottom: 10px;
+    background-color: #1c1e21;
+    border-radius: 20px;
+    border: 0.1px solid gray;
+    font-size: 17px;
+}
+
+
+
+form h2{
+    color: white;
+    
+}
+
+form button{
+ height: 5vh;
+
+
+}
+
+.login-forget{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    height: 13vh;
+
+
+    
+   
+}
+#login{
+    background-color: rgba(0, 106, 255, 0.66);
+    color: white;
+    border: none;
+    margin-bottom: 20px;
+    height: 160px;
+    border-radius: 40px;
+    font-size: 20px;
+    font-family: "Roboto";
+}
+
+#forget-password{
+    height: 160px;
+    border-radius: 40px;
+    color: white;
+    background-color: #0d0e0f;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 600;
+    padding-left: 10px;
+
+}
+
+#forget-password:hover{
+    background-color: #232527;
+}
+
+.login-fb-create{
+     margin: 70px 0px;
+    display: none;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+.h2oflogin{
+    margin-bottom: 30px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+#homeeee h3{
+     background: linear-gradient(to right, #FF5CCC, #DC52BF, #B947B1);
+  
+  
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-weight: bold;
+  
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+
+  text-align: end;
+}
