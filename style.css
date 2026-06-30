@@ -13,6 +13,7 @@ html, body{
 
 
 .main-hold{
+    overflow: hidden;
     height: 100%;
     width: 100%;
     background-color: #1c1e21;
@@ -101,7 +102,10 @@ form input{
     border-radius: 20px;
     border: 0.1px solid gray;
     font-size: 17px;
+    padding-left: 10px;
+    color: white;
 }
+
 
 
 
@@ -185,4 +189,20 @@ form button{
   color: transparent;
 
   text-align: end;
+}
+
+#imageofinsta{
+    height: 72px;
+    width: 72px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+footer{
+    height: 100px;
+    width: 100vw;
+    background-color: #1c1e21;
+    border-top: 3px solid #0d0e0f;
+
 }
