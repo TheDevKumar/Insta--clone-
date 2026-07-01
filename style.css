@@ -1,208 +1,221 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght0,100..900;1,100..900&display=swap');
 
-
-*{
+* {
     padding: 0;
     margin: 0;
+    box-sizing: border-box; 
 }
 
-html, body{
+html, body {
     background-color: #1c1e21;
     font-family: "Roboto", sans-serif;
+    min-height: 100vh;
+    color: white;
 }
 
-
-.main-hold{
-    overflow: hidden;
-    height: 100%;
+.main-hold {
+    min-height: 100vh;
     width: 100%;
     background-color: #1c1e21;
-    display: grid;
-    grid-template-columns: 60% 15%; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 80px 40px 40px 40px; 
+    position: relative;
+    gap: 40px;
 }
 
+#imageofinsta {
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    object-fit: contain;
+}
 
-
-.text-img-holder{
-    height: 100vh;
-    width: 500px;
-    background-color: #1c1e21;
+.text-img-holder {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-}
-
-
-
-
-.img-holder{
-    display: flex;
-    height: 500px;
-    width: 500px;
-    
-
-   
-}
-
-.text-img-holder{
-    margin-left: 400px;
-    justify-content: center;
     align-items: center;
-
-}
-.text-holder{
-    margin-left: 60px;
-}
-
-
-img{
-
-    height: 500px;
-    width: 500px;
+    justify-content: center;
+    max-width: 550px;
+    width: 100%;
+    gap: 30px;
 }
 
+.text-holder {
+    width: 100%;
+}
 
-h1{
-    height: 100px;
-    width: 770px;
-    font-size: 50px;
+h1 {
+    font-size: clamp(2rem, 3.5vw, 3.2rem); /* Auto scaling font size */
     color: white;
     font-family: "Roboto", sans-serif;
-    
-    
+    font-weight: 700;
+    line-height: 1.2;
 }
 
-.sigin-form-holder{
-    height: 100vh;
-    width: 36vw;
+#homeeee {
+    background: linear-gradient(to right, #FF5CCC, #DC52BF, #B947B1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    display: inline-block;
+}
+
+.img-holder {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 450px;
+}
+
+.img-holder img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.sigin-form-holder {
     background-color: #1E1E1E;
     display: flex;
     justify-content: center;
-    align-self: center;
     align-items: center;
-    margin-left: 70px;
-    border-left: 2px solid rgb(66, 66, 66);
-   
+    width: 100%;
+    max-width: 420px;
+    padding: 40px 30px;
+    border-radius: 12px;
+    border: 1px solid rgb(66, 66, 66);
 }
 
-form{
-    height: 60vh;
-    width: 30vw;
+form {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    margin-top: 10px;
-    
+    gap: 16px;
 }
 
-form input{
-    height: 60px;
+.h2oflogin {
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
     margin-bottom: 10px;
+}
+
+form input {
+    width: 100%;
+    height: 52px;
     background-color: #1c1e21;
-    border-radius: 20px;
-    border: 0.1px solid gray;
-    font-size: 17px;
-    padding-left: 10px;
+    border-radius: 8px;
+    border: 1px solid #424242;
+    font-size: 15px;
+    padding: 0 16px;
     color: white;
+    outline: none;
+    transition: border 0.2s ease;
 }
 
-
-
-
-form h2{
-    color: white;
-    
+form input:focus {
+    border-color: #a83294; 
 }
 
-form button{
- height: 5vh;
-
-
-}
-
-.login-forget{
-    margin-top: 5px;
+.login-forget {
     display: flex;
     flex-direction: column;
-    height: 13vh;
-
-
-    
-   
-}
-#login{
-    background-color: rgba(0, 106, 255, 0.66);
-    color: white;
-    border: none;
-    margin-bottom: 20px;
-    height: 160px;
-    border-radius: 40px;
-    font-size: 20px;
-    font-family: "Roboto";
+    gap: 12px;
+    margin-top: 10px;
 }
 
-#forget-password{
-    height: 160px;
-    border-radius: 40px;
+#login {
+    background-color: rgba(0, 106, 255, 0.85);
     color: white;
-    background-color: #0d0e0f;
     border: none;
-    font-size: 15px;
+    height: 48px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
-    font-weight: 600;
-    padding-left: 10px;
-
+    transition: background 0.2s ease;
 }
 
-#forget-password:hover{
-    background-color: #232527;
+#login:hover {
+    background-color: rgb(0, 106, 255);
 }
 
-.login-fb-create{
-     margin: 70px 0px;
-    display: none;
+#forget-password {
+    height: 40px;
+    border-radius: 8px;
+    color: #0095f6; 
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+#forget-password:hover {
+    text-decoration: underline;
+}
+
+.login-fb-create {
+    margin-top: 20px;
+    display: none; 
     flex-direction: column;
+    gap: 10px;
 }
 
-
-
-
-
-
-
-
-.h2oflogin{
-    margin-bottom: 30px;
-    font-size: 20px;
-    margin-left: 10px;
-}
-
-#homeeee h3{
-     background: linear-gradient(to right, #FF5CCC, #DC52BF, #B947B1);
-  
-  
-  -webkit-background-clip: text;
-  background-clip: text;
-  font-weight: bold;
-  
-  -webkit-text-fill-color: transparent;
-  color: transparent;
-
-  text-align: end;
-}
-
-#imageofinsta{
-    height: 72px;
-    width: 72px;
+footer {
     position: absolute;
-    top: 50px;
-    left: 50px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #1c1e21;
+    border-top: 1px solid #0d0e0f;
 }
 
-footer{
-    height: 100px;
-    width: 100vw;
-    background-color: #1c1e21;
-    border-top: 3px solid #0d0e0f;
+@media (max-width: 950px) {
+    .main-hold {
+        flex-direction: column; 
+        justify-content: flex-start;
+        padding-top: 120px;
+        gap: 50px;
+    }
 
+    #imageofinsta {
+        left: 50%;
+        transform: translateX(-50%); 
+        top: 25px;
+    }
+
+    .text-img-holder {
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .img-holder {
+        max-width: 320px; 
+    }
+
+    .sigin-form-holder {
+        background-color: transparent; 
+        border: none;
+        padding: 0;
+        max-width: 100%;
+    }
+    
+    form input {
+        background-color: #121212;
+    }
+
+    footer {
+        position: relative;
+        margin-top: 40px;
+    }
 }
